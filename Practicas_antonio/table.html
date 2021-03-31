@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Table</title>
 </head>
 <body>
+   
+    <table>
+        <caption>Tabla de colores</caption>
+        
+   
+        <thead>     
+            <tr>
+                <th>Cálidos</th>
+                <th>Medios</th>
+                <th>Fríos</th>
+                <th>Neutros</th>
+            </tr>
+        </thead>
+            <tfoot>     
+            <tr>
+                <th>Cálidos</th>
+                <th>Medios</th>
+                <th>Fríos</th>
+                <th>Neutros</th>
+            </tr>
+            </tfoot>
+        <tbody>
+        <tr>
+            <td>Magenta</td>
+            <td>Amarillo</td>
+            <td>Azul</td>
+            <td>Marrón</td>
+        </tr>
+        <tr>
+            <td>Naranja</td>
+            <td>Crema</td>
+            <td>Verde</td>
+            <td>Beige</td>
+        </tr>
+        <tr>
+            <td>Rojo</td>
+            <td>Néctar</td>
+            <td>Violeta</td>
+            <td>Gris</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <table>
+        <caption>Titulo de la tabla</caption>
+        <thead>
+            <tr>
+                <th Colspan="3">celda de encabezado</th>
+
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th Colspan="3">Esto es un pie de tabla</th>
+
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td rowspan="2">celda1</td>
+                <td>celda2</td>
+                <td>celda3</td>
+                <td>celda4</td>
+            </tr>
+            <tr>
+                <td>celda5</td>
+                <td>celda6</td>
+                <td>celda7</td>
+            </tr>
+        </tbody>
+
+    </table>
     
 </body>
 </html>
