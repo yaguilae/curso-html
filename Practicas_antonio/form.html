@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <form action="#" method="GET">
+        <fieldset> <legend>Datos personales:</legend>
+        
+        <label for="inp_nombre">Nombre</label>
+        <!-- El atributo atofocus pone el foco (el cursor) en el elemento  -->
+        <!-- El atributo maxlength hace referencia a la cantidad max de caracteres que permite -->
+        <input id="inp_nombre" maxlength="30" type="text" name="nombre" autofocus> 
+        <br> 
+        <label for="inp_apellido">Apellidos</label>
+        <!-- El atributo disabled desabilita el elmento -->
+        <!-- Con value le damos un valor por defecto -->
+        <input id="inp_apellido" type="text" name="apellidos" value="Aguilar" disabled> 
+        <br> 
+        <label for="inp_email">Email</label>
+        <input id="inp_email" type="email" name="email"> 
+        <br>
+        <label for="inp_pass">Contraseña</label>
+        <input id="inp_pass" type="password" name="password"> 
+        <br>   
+        <label for="inp_edad">Edad</label>
+        <input id="inp_edad" type="number" max="199" min="18" name="edad"> 
+        <br> 
+
+        <label>Sexo:</label>
+        <label for="inp_sexo_h">hombre</label>
+        <input id="inp_sexo_h" type="radio" name="sexo" value="H"> 
+        
+        <label for="inp_sexo_m">mujer</label>
+        <!-- el atributo checked lo deja marcado -->
+        <input id="inp_sexo_m" type="radio" name="sexo" value="M" checked>
+        
+        
+        <br> 
+        <label>Intereses</label>
+         <!--aquí usamos un truco para relacionar label con du elemento sin usar el atributo for:, es decir que el input sea hijo delelemento label  -->
+        <label><input type="checkbox" name="informatica"> Informática </label>
+        <label><input type="checkbox" name="viajar" checked> Viajar </label>
+        <label><input type="checkbox" name="gastronomia" checked> Gastronomía </label>
+        <label><input type="checkbox" name="arte">Arte </label>
+       
+        <br>
+
+<!-- Esto es un campo oculto -->
+        <input type="hidden" name="tipo_usuario" value="web">
+
+    </fieldset>
+    <fieldset>
+        <legend>Trabajo:</legend>
+    
+        <label for="sel_sueldo">Sueldo:</label>
+
+        <select name="sueldo" id="sel_sueldo">
+            <option value=""></option>
+            <option value="0_800">de 0 a 800</option>
+            <option value="801_1000">de 801 a 1000</option>
+            <option value="1001_1200">de 1001 a 1200</option>
+            <option value="1201_1500">de 1201 a 1500</option>
+        </select>
+        <br>
+        <label for="inp_file_cv">Curriculum</label>
+        <input type="file" name="cv" id="inp_file_cv">
+        <br>
+
+
+
+<!-- todos los elementos html admiten los atributos is, class, style,... aquli vamos a usar
+style que es para dotar de CSS al elemento. En este caso para que no sea redimensionable, y de paso le ponemos el texto en rojo -->
+        <label for="imp_puesto">Descipciçon del puesto:</label>
+        <br>
+        <textarea name="puesto" id="imp_puesto" cols="100" rows="10" style="color:red; resize: none;">...</textarea>
+        <br>   
+        
+    </fieldset>
+
+    <!-- El atributo type del elemento button tiene el valor por defecto "submit" -->
+        <button><strong>Enviar</strong></button>
+        <button type="reset">Borrar</button>
+        <button type="button">No hace nada</button>
+
+        <!-- Esto sería un botono con imagen incorporada -->
+        <input type="image" name="icono" id="btn_imagen" width="30" alt="clickeame" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Check_green_icon.svg/1024px-Check_green_icon.svg.png">
+    
+        <!-- <input type="button" value="Botón">
+        <input type="reset" value="Resetear">
+        <input type="submit" value="Submit"> -->
+
+    </form>
+
+
+</body>
+</html>
+
