@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Formulario</title>
+</head>
+
+<body>
+   
+    <form action="#" method="GET" >
+        <fieldset>
+            <legend>Datos personales:</legend>
+            <div class="elemento_form">
+                <label for="inp_nombre">Nombre:</label>
+                <input type="text" name="nombre" id="inp_nombre">
+            </div>
+
+
+            <div class="elemento_form">
+                <label for="inp_apellido">Apellidos:</label>
+                <input type="text" name="apellido" id="inp_apellido">
+            </div>
+
+            <div class="elemento_form">
+                <label for="inp_direccion">Dirección:</label>
+                <input type="text" name="direccion" id="inp_direccion">
+            </div>
+
+
+
+            <div class="elemento_form">
+                <label for="inp_email">Email:</label>
+                <input type="email" name="email" id="inp_email">
+            </div>
+
+
+            <div class="elemento_form">
+                <label for="inp_pass">Contraseña</label>
+                <input type="password" name="pass" id="inp_pass">
+            </div>
+
+
+            <div class="elemento_form">
+                <label for="id_edad">Edad</label>
+                <input type="number" name="edad" id="id_edad" maxlength="3" max="199" min="0">
+
+            </div>
+
+            <div class="elemento_form elemento_grupal">
+                <label>Sexo:</label>
+                <span>
+                    <label for="inp_sexo_h">Hombre</label>
+                    <input type="radio" name="sexo" id="inp_sexo_h">
+                </span>
+                <span>
+
+                    <label for="inp_sexo_m">Mujer</label>
+                    <input type="radio" name="sexo" id="inp_sexo_m">
+                </span>
+
+            </div>
+
+
+            <div class="elemento_form elemento_grupal">
+                <label for="">Intereses:</label>
+
+
+                <div>
+                    <input type="checkbox" name="baloncesto" id="inp_baloncesto">
+                    <label for="inp_baloncesto">Baloncesto </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="sky" id="inp_sky">
+                    <label for="inp_shy">Sky </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="natacion" id="inp_natacion">
+                    <label for="inp_natacion">Natación </label>
+
+                </div>
+                <div>
+                    <input type="checkbox" name="inp_futbol" id="inp_futbol">
+                    <label for="inp_futbol">Fútbol </label>
+
+                </div>
+                <div>
+                    <input type="checkbox" name="balonmano" id="inp_balonmano">
+                    <label for="inp_balonmano">Balonmano </label>
+
+                </div>
+            </div>
+
+
+
+            <input type="hidden" name="tipo" id="" value="web">
+
+        </fieldset>
+        <fieldset>
+
+            <legend>Trabajo:</legend>
+
+            <div class="elemento_form" >
+                <label for="sel_sueldo">Sueldo:</label>
+
+
+                <select name="sueldo" id="sel_sueldo">
+                    <option value=""></option>
+                    <option value="0_800">de 0 a 800</option>
+                    <option value="801_1000">de 801 a 1000</option>
+                    <option value="1001_1200">de 1001 a 1200</option>
+                    <option value="1201_1500">de 1201 a 1500</option>
+                </select>
+            </div>
+
+        </fieldset>
+        <button>resetear</button> &nbsp;&nbsp;&nbsp;&nbsp;   <button>enviar</button>
+       
+        <div class="elemento_form" >
+            <label for="">Descripción del puesto:</label>
+            <br>
+            
+            <textarea name="puesto" id="imp_puesto" cols="100" rows="10" maxlength="120" placeholder="Max 120 caracteres..."></textarea>
+        </div>
+
+        <div id="seccion_botones">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+            <button>No hace nada</button>
+        </div>
+
+
+    </form>
+<!-- la etiqueta pre respeta todos los espacios en blanco, tabulaciones y retornos de carro-->
+    <pre>
+        Datos personales:
+    
+        Nombre
+        Apellidos
+        Email
+        contraseña (imput type password)
+        Edad (input numérico)
+        Sexo (input type radio) (hombre o mujer)
+        Intereses (input type checkbox) (poner varios intereses)
+        campo oculto llamado "tipo" con valor "web" (input hidden)
+        Trabajo:
+    
+        Sueldo: (select con 5 opciones) (de 0-800, de 801-1000, de 1001-1200, de 1201-1500, más de 1501)
+        Descripción de tu puesto: (textarea)
+        Acciones:
+    
+        Botón Enviar (submit)
+        Botón resetear (reset)
+        Botón alternativo (button que no hace nada)
+    </pre>
+
+</body>
+
+</html>
