@@ -1,0 +1,56 @@
+body{
+    margin: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(https://s1.eestatic.com/2020/05/18/como/gatos-mascotas-trucos_490961518_152142875_1706x960.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: lighten ;
+    background-size: cover;
+}
+
+nav a{
+    color: wheat;
+    text-decoration: none;
+    background-color: black;
+    padding: 12px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+nav a:hover{
+    background-color: rgb(99, 96, 99);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+nav li{
+    list-style: none;
+}
+.img-lado-texto{
+    width: 200px;
+    margin-left: 20px;
+}
+.box-img-texto{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+}
+.box-img-texto p{
+    margin-top: 0px;
+}
+footer{
+    border: 1px solid black;
+    color:wheat;
+    background-color: rgb(24, 49, 41);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 4px 4px 40px 40px;
+}
+
+h5{
+    text-decoration: underline;
+}
