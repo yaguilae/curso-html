@@ -1,0 +1,55 @@
+/* Se ponen a 0 todos los bordes, márgenes y metemos el borde en el tamaño de las cajas */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 12px; 
+}
+
+img{
+    width: 20px;
+
+}
+
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top,#65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cristal{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem)
+}
+
+.pompa{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.pompa:nth-of-type(1){
+    top: 5%;
+    right: 15%;
+}
+.pompa:nth-of-type(2){
+    bottom: 5%;
+    left: 10%;
+}
+
+
+
+    
